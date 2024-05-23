@@ -1,0 +1,28 @@
+
+@keyframes scroll-right {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.horizontal-scroll{
+  overflow-x: hidden;
+}
+
+.auto-scroll {
+  display: inline-block;
+  white-space: nowrap;
+
+}
+
+.auto-scroll.scroll-left{
+  animation: scroll-left 20s linear infinite;
+}
+
+.auto-scroll.scroll-right{
+  animation: scroll-right 20s linear infinite;
+}
